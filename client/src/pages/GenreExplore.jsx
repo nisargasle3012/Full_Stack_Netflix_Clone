@@ -1,4 +1,3 @@
-// src/pages/GenreExplore.jsx
 import React from "react";
 import { useLoaderData, redirect } from "react-router-dom";
 import { COMMON_TITLES } from "../constant";
@@ -7,11 +6,9 @@ import { MEDIA_TYPE } from "../types/Common";
 import { genreSliceEndpoints } from "../store/slices/genre";
 import store from "../store";
 
-// Loader: fetches the genre either from COMMON_TITLES or via API
 export async function loader({ params }) {
   const genreId = params.genreId;
 
-  // Try common titles first
   let genre = COMMON_TITLES.find((t) => t.apiString === genreId);
 
   // If not found, fetch all genres from the store and match by ID

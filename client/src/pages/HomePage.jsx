@@ -7,7 +7,6 @@ import { genreSliceEndpoints, useGetGenresQuery } from "../store/slices/genre";
 import { MEDIA_TYPE } from "../types/Common";
 import store from "../store";
 
-// Loader function to pre-fetch movie genres
 export async function loader() {
   await store.dispatch(
     genreSliceEndpoints.getGenres.initiate(MEDIA_TYPE.Movie)
