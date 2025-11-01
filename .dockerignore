@@ -1,0 +1,27 @@
+# Node dependencies
+**/node_modules
+
+# Build output
+**/build
+**/dist
+
+# Environment and credentials
+**/.env
+.env
+*.pem
+
+# Logs and temp files
+**/*.log
+**/__pycache__/
+**/.DS_Store
+**/tmp/
+**/coverage/
+
+# Git and documentation
+.git
+.gitignore
+README.md
+
+# Docker-specific
+Dockerfile
+docker-compose.yml
